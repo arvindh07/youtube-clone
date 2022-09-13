@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ChannelFeed = () => {
+const ChannelDetail = () => {
   return (
-    <div>ChannelFeed</div>
+    <div>ChannelDetail</div>
   )
 }
 
-export default ChannelFeed
+export default ChannelDetail;

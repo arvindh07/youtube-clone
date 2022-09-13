@@ -10,7 +10,7 @@ const Navbar = () => {
       direction="row" 
       p={2} 
       alignItems="center" 
-      sx={{position:"sticky",backgroundColor:"#000",top:0,justifyContent:"space-between"}}>
+      sx={{position:"sticky",zIndex:5,backgroundColor:"#000",top:0,justifyContent:"space-between"}}>
 
         <Link to="/" style={{display:"flex",alignItems:"center"}}>
           <img src={logo} alt="yt-logo" height={45} />
