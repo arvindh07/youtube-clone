@@ -11,8 +11,10 @@ const SearchBar = () => {
         component="form"
         onSubmit={(e) => {
           e.preventDefault();
-          navigate(`/search/${searchText}`);
-          setSearchText("");
+          if(searchText){
+            navigate(`/search/${searchText}`);
+            setSearchText("");
+          }
         }}
         sx={{
             border:"1px solid #e3e3e3",

@@ -4,10 +4,10 @@ import ChannelCard from './ChannelCard';
 import VideoCard from './VideoCard';
 
 const Videos = (props) => {
-    const { videos } = props;
+    const { videos,direction } = props;
     return (
         <Stack
-            direction="row"
+            direction={direction || "row"}
             flexWrap="wrap"
             justifyContent="flex-start"
             gap={2}

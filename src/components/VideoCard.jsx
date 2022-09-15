@@ -11,12 +11,12 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 const VideoCard = (props) => {
     const { video: { id: { videoId }, snippet } } = props;
     return (
-        <Card sx={{width: {xs:"100%",md:"320px"} , boxShadow:"none",borderRadius:"0"}}>
+        <Card sx={{width: {xs:"100%",sm:"358px",md:"320px"} , boxShadow:"none",borderRadius:"0"}}>
             <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
                 <CardMedia
                     alt={snippet?.title}
                     image={snippet?.thumbnails?.high?.url}
-                    sx={{ width: "358px", height: "180px" }}
+                    sx={{ width: {xs:"100%",sm:"358px",md:"320px"}, height: "180px" }}
                 />
             </Link>
             <CardContent sx={{
